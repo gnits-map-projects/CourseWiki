@@ -17,7 +17,7 @@ Implement an app that allow users to:
 
 Implement a basic back office web interface for easy management of movies - add, update, delete, search etc.
 This UI is used by administrators to manage available movies as new are released.
-Admins must register and sign in before they can manage restaurants.
+Admins must register and sign in before they can manage movies.
 
 Basic user administration
 * Signup
@@ -40,7 +40,7 @@ Movie properties
 
 Implement a backend service that stored movies, ratings and recommendations.
 
-Capture and enter at least 30 movies as example data and PoC. 
+Capture and enter at least 30 movies as example data and PoC.
 If open and free data exists (look at IMDb), the team can decide to import this data instead of adding it manually.
 
 ### Application
