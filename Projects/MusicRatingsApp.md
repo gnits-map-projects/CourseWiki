@@ -1,64 +1,40 @@
 ### Description
+Implement a music recommendation services that will give users personalised playlists based on the user and their friends favourite songs on Spotify.
 
-Implement a music rating services that allows users to rate songs/albums and receive personalised recommendations based on previous ratings.
-Songs and albums will be used interchangeable in the description. Both should be supported.
+Integrate with Spotify through one of their SKDs or the REST API to extract the users favourite songs.
+Create a group and invite your friends. The services will generate personalised playlists based on the members in the group and their favourite songs.
 
-This project contains both a backend and front-end part.
+This project contains both a backend and front-end part.    
+
+Difficulty of this project is a little higher and it will be more difficult to implement a polished app. This project focus more on integration, understanding OAuth, REST APIs and algorithms for generating suggestions.
 
 ### Requirements
 
 Implement an app that allow users to:
-* Search for songs (by name, category, artist etc)
-* View details of a song
-* Rate a song
-* View highest rated song (across all and by category)
-* View trending songs (e.g. songs clicked most times)
-* View recommendations based on users previous ratings
-* Users must register and sign in before they can rate any songs and receive recommendations.
-
-Implement a basic back office web interface for easy management of songs - add, update, delete, search etc.
-This UI is used by administrators to manage available songs as new are released.
-Admins must register and sign in before they can manage songs.
-
-Basic user administration
-* Signup
-* Sign in
-* Sign out
-* Update profile
-* Song properties
-
-Song properties
-* Title
-* Album
-* Cover pictures
-* Short description
-* Date
-* Rating
-* Category
-* Artist
-* Members
-* more?
-
-(Some of the properties might below to the album)
+* Sign in to Spotify
+* Extract users favourite songs from Spotify (up to the team to define the meaning of favourite)
+* Create a listening group
+* Invite friends to a group
+* Generate personalised playlists based on the members
 
 ### Backend Service
 
-Implement a backend service that store songs, albums, ratings and recommendations.
-
-Capture and enter at least 10 albums and 50 songs as example data and PoC.
-If open and free data exists, the team can decide to import this data instead of adding it manually.
+Implement a backend service that store users, their favourite songs, groups and their members, personalised playlists. 
 
 ### Application
 
 The app can be implemented as either a web app, mobile web app, responsive app or even native app (agree with your mentor before starting).
 
-### References
-
-None
+Focus should not more on "making the integration work" over a super polised UI.
 
 ### References
 
 None
+
+### References
+
+Spotify REST API
+https://developer.spotify.com/documentation/web-api/
 
 ### Questions
 
@@ -67,6 +43,5 @@ TBD
 ### Improvement suggestions
 
 Possible improvements and bonus tasks
-* View and leave comments
-* Thumbs up/down a comment
-* Experiments with various recommendation strategies - E.g. Content Based Recommender, Collaborative Filtering etc
+* Upload the personalised playlist to Spotify
+* Play songs (from Spotify) directly from inside the app
